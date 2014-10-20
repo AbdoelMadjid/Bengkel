@@ -17,7 +17,14 @@
         "symfony/monolog-bundle": "~2.4",
         "sensio/distribution-bundle": "~3.0",
         "sensio/framework-extra-bundle": "~3.0",
-        "incenteev/composer-parameter-handler": "~2.0"
+        "incenteev/composer-parameter-handler": "~2.0",
+        "friendsofsymfony/user-bundle": "dev-master",
+        "jms/security-extra-bundle": "dev-master",
+        "knplabs/knp-paginator-bundle": "dev-master",
+        "tecnick.com/tcpdf": "dev-master",
+        "phpoffice/phpexcel": "dev-master",
+        "beberlei/DoctrineExtensions": "dev-master",
+        "ocramius/proxy-manager": "dev-master"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"
