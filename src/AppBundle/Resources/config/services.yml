@@ -1,2 +1,7 @@
 services:
-    app.security.encoder.password: AppBundle\Security\Encoder\PasswordEncoder
+    app.security.encoder.generator:
+        class: AppBundle\Security\Encoder\BaseGenerator
+    app.security.encoder.password:
+        class: AppBundle\Security\Encoder\PasswordEncoder
+        arguments:
+            - @app.security.encoder.generator

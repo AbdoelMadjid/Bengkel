@@ -8,14 +8,13 @@
  **/
 namespace AppBundle\Entity;
 
-use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity
- * @ORM\Table(name="user")
+ * @ORM\Entity(repositoryClass="AppBundle\Entity\Repository\Order")
+ * @ORM\Table(name="order")
  **/
-class User extends BaseUser
+class Order
 {
     /**
      * @ORM\Id
