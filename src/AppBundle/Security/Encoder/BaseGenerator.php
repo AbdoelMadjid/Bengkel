@@ -1,14 +1,14 @@
 <?php
 /**
- * This file is part of Ihsan Encoder
+ * This file is part of Bengkel
  *
  * (c) Muhamad Surya Iksanudin<surya.kejawen@gmail.com>
  *
  * @author : Muhamad Surya Iksanudin
  **/
-namespace Ihsan\Encoder;
+namespace AppBundle\Security\Encoder;
 
-interface GeneratorInterface
+class BaseGenerator implements GeneratorInterface
 {
     /**
      * Generator to generate unique value
@@ -18,5 +18,8 @@ interface GeneratorInterface
      * @param string $raw
      * @return string
      **/
-    public function generate($raw);
+    public function generate($raw)
+    {
+        return sha1($raw);
+    }
 }

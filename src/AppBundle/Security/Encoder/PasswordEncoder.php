@@ -1,12 +1,12 @@
 <?php
 /**
- * This file is part of Ihsan Encoder
+ * This file is part of Bengkel
  *
  * (c) Muhamad Surya Iksanudin<surya.kejawen@gmail.com>
  *
  * @author : Muhamad Surya Iksanudin
  **/
-namespace Ihsan\Encoder;
+namespace AppBundle\Security\Encoder;
 
 class PasswordEncoder implements PasswordEncoderInterface
 {

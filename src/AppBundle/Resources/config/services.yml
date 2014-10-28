@@ -1,0 +1,2 @@
+services:
+    app.security.encoder.password: AppBundle\Security\Encoder\PasswordEncoder
