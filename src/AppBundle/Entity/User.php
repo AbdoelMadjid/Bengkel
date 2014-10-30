@@ -24,6 +24,11 @@ class User extends BaseUser
      **/
     protected $id;
 
+	/**
+     * @ORM\Column(type="string", length=40, nullable=true)
+     **/
+    protected $authenticationToken;
+
     public function __construct()
     {
         parent::__construct();
