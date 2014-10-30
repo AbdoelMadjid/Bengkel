@@ -11,7 +11,7 @@ namespace AppBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="AppBundle\Entity\Repository\Order")
+ * @ORM\Entity(repositoryClass="AppBundle\Entity\Repository\OrderRepository")
  * @ORM\Table(name="order")
  **/
 class Order

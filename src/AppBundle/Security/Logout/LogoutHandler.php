@@ -14,7 +14,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use FOS\UserBundle\Model\UserManagerInterface;
 
-class AjaxLogoutHandler implements LogoutHandlerInterface
+class LogoutHandler implements LogoutHandlerInterface
 {
     /**
      * @var \FOS\UserBundle\Model\UserManagerInterface

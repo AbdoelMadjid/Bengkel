@@ -35,22 +35,11 @@ class OrderEvent extends Event
      * @param Request $request
      * @param Response $response
      **/
-    public function __construct(Order $order, Request $request, Response $response)
+    public function __construct(Order $order, Request $request)
     {
         $this->order = $order;
         $this->request = $request;
         $this->response = $response;
-    }
-
-    /**
-     * @param Order $order
-     * @return $this
-     **/
-    public function setOrder(Order $order)
-    {
-        $this->order = $order;
-
-        return $this;
     }
 
     /**
@@ -60,17 +49,6 @@ class OrderEvent extends Event
     public function setResponse(Response $response)
     {
         $this->response = $response;
-
-        return $this;
-    }
-
-    /**
-     * @param Request $request
-     * @return $this
-     **/
-    public function setRequest(Request $request)
-    {
-        $this->request = $request;
 
         return $this;
     }
